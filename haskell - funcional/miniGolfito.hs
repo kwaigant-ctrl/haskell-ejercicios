@@ -195,12 +195,17 @@ componentes en 0.
 
 superarHoyo :: Obstaculo
 superarHoyo tiro 
-    | velocidad tiro >= 5 && velocidad tiro <= 20 && altura == 0 && precision > 95 =
+    | velocidad tiro >= 5 && velocidad tiro <= 20 && altura tiro == 0 && precision tiro > 95 =
         tiroDetenido
 
 {-
 Definir palosUtiles que dada una persona y un obstáculo, 
 permita determinar qué palos le sirven para superarlo.
+
+
+SEGUIR A PARTIR DE ACA
+
+
 
 Saber, a partir de un conjunto de obstáculos y un tiro, 
 cuántos obstáculos consecutivos se pueden superar.
